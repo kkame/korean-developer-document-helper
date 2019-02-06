@@ -1,0 +1,47 @@
+{
+  "name": "korean_developer_document_helper",
+  "version": "0.0.2",
+  "description": "한국 개발자들을 위한 메뉴얼 사이트 사용성을 개선하는 크롬/파이어폭스 플러그인 입니다.",
+  "devDependencies": {
+    "@webpack-cli/init": "^0.1.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-eslint": "^8.2.6",
+    "css-loader": "^1.0.0",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "vuejs": "^3.0.1",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0",
+    "cross-env": "^5.1",
+    "eslint": "^5.2.0",
+    "eslint-plugin-compat": "^2.5.1"
+  },
+  "scripts": {
+    "publish": "cd ./src && zip -r -FS ../dist/extension.zip *",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.dev.js",
+    "watch": "npm run development -- --watch",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=webpack.dev.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=webpack.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkame/korean-developer-document-helper.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kkame/korean-developer-document-helper/issues"
+  },
+  "homepage": "https://github.com/kkame/korean-developer-document-helper#readme",
+  "engines": {
+    "node": ">=6"
+  }
+}

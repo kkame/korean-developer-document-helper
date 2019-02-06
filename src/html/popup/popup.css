@@ -1,0 +1,36 @@
+body {
+    width: 30rem;
+    max-height: 30rem;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    background: #00BCD4;
+    font-size: 1rem;
+    color: white;
+    padding: 1rem;
+    margin: 0
+}
+.title .logo{
+    width:15px;
+}
+
+.contents {
+    padding: 1rem;
+}
+
+.subtitle {
+    margin:0;
+}
+
+.support-manuals {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    font-size:1rem;
+}
+
+.support-manuals li {
+    width: 50%;
+}
